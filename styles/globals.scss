@@ -1,0 +1,46 @@
+:root {
+  // color
+  --color__000000: #000000;
+  --color__ffffff: #ffffff;
+  --color__9a827d: #9a827d;
+  --color__212121: #212121;
+  --color__161616: #161616;
+  --color__6b6b6b: #6b6b6b;
+  --color__9a827d: #9a827d;
+}
+html {
+  /* (10/16)100 => 62.5% */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

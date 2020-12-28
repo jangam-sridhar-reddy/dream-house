@@ -1,0 +1,68 @@
+.service {
+  & {
+    padding: 8rem 0;
+    background-color: #f9f9f9;
+  }
+  &__inner {
+    display: flex;
+
+    & > * {
+      flex-basis: 33.3333%;
+    }
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    color: var(--color__161616);
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    &-secondary {
+      font-size: 2rem;
+      color: var(--color__212121);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__box {
+    padding: 0 2rem;
+  }
+  &__image {
+    &-block {
+      width: 100%;
+      height: 24rem;
+    }
+    & {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__description {
+    text-align: center;
+  }
+  &__paragraph {
+    font-size: 1.7rem;
+    color: var(--color__6b6b6b);
+    margin-bottom: 2rem;
+  }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.7rem;
+      color: var(--color__9a827d);
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+}
