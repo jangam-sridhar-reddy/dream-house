@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 After cloning the Repo to the working directory or project folder
 
-Download the [https://nodejs.org/en/](Node.js) Recommended version
+Download the [Node.js](https://nodejs.org/en/) Recommended version
 
 and install the node js
 
@@ -21,6 +21,14 @@ if its shows v14.x.x or Later version . it indicates that node installed correct
 if its shows node not found please re install it
 
 then go to project folder in cmd propt or git bash
+
+Enter
+
+```bash
+npm install
+```
+
+after installation complete
 
 run the development server:
 
