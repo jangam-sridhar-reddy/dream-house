@@ -1,0 +1,55 @@
+.critical {
+  & {
+    padding-bottom: 10rem;
+  }
+  &__row {
+    display: flex;
+  }
+  &__60 {
+    flex-basis: 60%;
+  }
+  &__padding {
+    & {
+      padding: 8rem;
+    }
+    &--right {
+      padding-right: 8rem;
+    }
+  }
+  &__top {
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ddd;
+  }
+  &__heading {
+    font-size: 3.4rem;
+    color: var(--color__161616);
+    line-height: normal;
+    text-transform: capitalize;
+
+    &--small {
+      color: var(--color__747474);
+      font-size: 2rem;
+    }
+  }
+  &__content {
+    padding: 6rem 0 0;
+
+    & p {
+      margin-bottom: 2rem;
+      color: var(--color__6b6b6b);
+      font-size: 1.7rem;
+    }
+  }
+  &__40 {
+    flex-basis: 40%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}

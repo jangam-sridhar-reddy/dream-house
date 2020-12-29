@@ -1,0 +1,86 @@
+.ourstory {
+  & {
+    margin-bottom: 25rem;
+  }
+  &__background-image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 1)
+      ),
+      url("/images/services-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 55rem;
+    position: relative;
+  }
+  &__container {
+    position: absolute;
+    top: 15rem;
+    left: 8rem;
+    right: 8rem;
+    padding: 5rem;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7) 30%,
+      rgba(255, 255, 255, 1) 70%
+    );
+    box-shadow: 0 0 68px rgba(17, 17, 17, 0.11);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  &__icon {
+    width: 7.4rem;
+    height: 7.4rem;
+
+    & > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__heading {
+    &-block {
+      padding-left: 3rem;
+    }
+
+    & {
+      font-size: 3.4rem;
+      text-transform: capitalize;
+      color: var(--color__161616);
+      line-height: normal;
+    }
+    &--small {
+      font-size: 1.9rem;
+      text-transform: none;
+      color: var(--color__747474);
+    }
+  }
+  &__content {
+    font-size: 1.7rem;
+    color: var(--color__6b6b6b);
+
+    & p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.7rem;
+      //   color: var(--color__9a827d);
+      color: var(--color__0070f3);
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+}

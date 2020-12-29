@@ -1,0 +1,119 @@
+.footer {
+  &__top {
+    background-color: var(--color__1d1d1d);
+    padding: 8rem 0;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    flex-basis: 25%;
+  }
+  &__box {
+    padding: 0 1.5rem;
+  }
+  &__logo {
+    margin-bottom: 3rem;
+  }
+  &__logo-link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      color: inherit;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover span {
+      color: #02be6e;
+    }
+
+    & > span {
+      font-size: 2.6rem;
+      color: #00ff92;
+      text-transform: uppercase;
+      display: flex;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__content {
+    color: var(--color__ababab);
+    font-size: 1.6rem;
+  }
+  &__heading {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: var(--color__ffffff);
+    margin-bottom: 3rem;
+  }
+  &__lists {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color__444444);
+    }
+  }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: var(--color__ababab);
+      font-size: 1.6rem;
+      transition: all 0.2s ease-in;
+    }
+    &:hover,
+    &:active {
+      color: var(--color__ffffff);
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-box {
+      flex-basis: 33.3333%;
+    }
+  }
+  &__image {
+    padding: 1rem;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+  }
+
+  &__bottom {
+    padding: 3rem 0;
+    background-color: var(--color__111111);
+
+    &-item {
+      text-align: center;
+      font-size: 1.6rem;
+      color: var(--color__ffffff);
+    }
+  }
+}

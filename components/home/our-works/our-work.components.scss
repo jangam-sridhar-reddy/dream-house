@@ -1,0 +1,150 @@
+.ourworks {
+  & {
+    padding: 0 0 8rem;
+  }
+  &__top {
+    padding: 0rem 0 8rem;
+    text-align: center;
+  }
+  &__heading {
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+  &__gallery {
+    display: flex;
+    height: 70rem;
+  }
+
+  &__image {
+    &--1,
+    &--3 {
+      flex-basis: 25%;
+    }
+    &--2 {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__picture {
+    &--3 {
+      display: flex;
+
+      & * {
+        flex-basis: 50%;
+        width: 50%;
+      }
+    }
+    &--4 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__inner-image {
+    overflow: hidden;
+    position: relative;
+
+    transition: all 0.3s ease-in;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 1;
+      visibility: hidden;
+      opacity: 0;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__inner-pic {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 35rem;
+    display: flex;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+    &--1 {
+      height: 70rem;
+    }
+  }
+
+  &__inner-image:hover &__inner-pic {
+    transform: scale(1.12);
+    transition: all 0.5s ease-in;
+  }
+
+  &__inner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6.5rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--color__464646);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+  }
+
+  &__inner-links {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      width: 100%;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__inner-icon {
+    font-size: 2rem;
+    color: var(--color__ffffff);
+  }
+
+  &__inner-image:hover &__inner-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__readmore {
+    padding-top: 4rem;
+    text-align: center;
+    &-link {
+      &,
+      &:link,
+      &:visited {
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: var(--color__0070f3);
+        font-weight: 700;
+      }
+    }
+  }
+}
